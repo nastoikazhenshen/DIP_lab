@@ -1,9 +1,5 @@
 package com.example.dip;
 
-/**
- * Concrete implementation for MySQL database.
- * Implements the Database interface.
- */
 public class MySQLDatabase implements Database {
 
     @Override
