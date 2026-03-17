@@ -9,11 +9,11 @@ public class MongoDatabase implements Database {
 
     @Override
     public void saveUser(String username) {
+        users.add(username);
         System.out.println("User " + username + " saved to MongoDB");
     }
     @Override
     public List<String> getAllUsers() {
-
         return new ArrayList<>(users);
     }
 }
