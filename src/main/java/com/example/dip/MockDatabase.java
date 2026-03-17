@@ -13,7 +13,9 @@ public class MockDatabase implements Database {
         System.out.println("Mock: User " + username + " saved (in memory list)");
     }
 
-    public List<String> getSavedUsers() {
-        return users;
+    @Override
+    public List<String> getAllUsers() {
+        return new ArrayList<>(users);
     }
+
 }

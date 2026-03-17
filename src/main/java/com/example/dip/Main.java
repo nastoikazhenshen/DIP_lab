@@ -5,11 +5,13 @@ public class Main {
 
         Database mysqlDb = new MySQLDatabase();
         UserService service1 = new UserService(mysqlDb);
-        service1.registerUser("Alice");
+        service1.registerUser("Darya");
+        service1.registerUser("Yevgenii");
+        service1.printAllUsers();
 
         Database mongoDb = new MongoDatabase();
         UserService service2 = new UserService(mongoDb);
-        service2.registerUser("Bob");
+        service2.registerUser("Sofiya");
 
         Database mock = new MockDatabase();
         UserService service = new UserService(mock);
